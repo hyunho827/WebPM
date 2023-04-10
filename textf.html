@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>고객의 소리</h2>
+    아이디: <input type="text" name="name"><br>
+    구매번호: <input type="text" name="number" size="10"><br>
+    패스워드: <input type="password" name="pass">
+    <form name="input" action="getfeedback.jsp" method="get">
+        제품을 평가해주세요.<br>
+        <textarea name="feedback" rows="20" cols="50"></textarea><br>
+        <input type="reset" name="reset" value="reset">
+        <input type="submit" name="submit" value="제출">
+        <!--reset과 submit의 차이는 새로고침의 유무이다.-->
+    </form>
+
+    <h2>선호도 조사입니다.</h2>
+    <form>
+        성별:
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female">여성<br>
+        과일선택:
+        <input type="checkbox" name="fruits" value="apple">사과
+        <input type="checkbox" name="fruits" value="grape">포도
+        <input type="checkbox" name="fruits" value="orange">오렌지
+        <input type="button" value="눌러볼래?" onclick="alert('환영합니다.')">
+    </form>
+
+    <button type="button"><img src="./steve.png" width="100" height="100"></button>
+</body>
+</html>
