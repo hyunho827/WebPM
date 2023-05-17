@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text] {
+            border: 3px solid blue;
+            color: black;
+            background-color: pink;
+            font-weight: bold;
+        }
+        input[type=email] {
+            border: 3px solid blue;
+            color: pink;
+            background-color: black;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        p, label, h2 {
+            font-weight: bold;
+        }
+        input[type=submit] {
+            background-color: aqua;
+            border: none;
+            color: white;
+            padding: 10px;
+        }
+        input[type=text]:hover {
+            background-image: url('회복술사.jpg');
+            width: 300px;
+            height: 150px;
+        }
+        input[type=email]:hover {
+            background-image: url('회복술사찡.jpg');
+            width: 300px;
+            height: 150px;
+        }
+        body {
+            background-image: url('ghlq.jpg');
+            width: auto;
+        }
+        h2, p {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>어렸을 적에 즐겁게 봤던 회복술사의 재시작</h2>
+    <p>작품을 평가해주세요.</p>
+    <div>
+        <form action="process.jsp">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="눌러... 하응"><br>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="눌러주세요..."><br>
+            <label for="subject">평가</label>
+            <textarea id="subject" name="subject" placeholder="상품을 평가해주세요." style="height:100px"></textarea>
+            </form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
